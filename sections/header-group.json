@@ -43,7 +43,7 @@
         "show_email": false,
         "show_phone": false,
         "enable_login_popup": false,
-        "separator_line": "all-page",
+        "separator_line": "unset",
         "sticky_header_type": "on-scroll-up",
         "sticky_header_mobile": false,
         "mega_menu": "main-menu",
