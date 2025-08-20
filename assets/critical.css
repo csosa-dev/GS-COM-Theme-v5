@@ -1,3 +1,4 @@
+
 /* Reset */
 *,
 *::before,
@@ -51,7 +52,7 @@ body {
 #search-form {
   z-index: -1;
 }
-:where(.container, .fluid_container) {
+:where(.container, .fluid_container, .header_custom_width) {
   padding-left: var(--bs-gutter-x, 1.5rem);
   padding-right: var(--bs-gutter-x, 1.5rem);
   margin-inline: auto;
@@ -74,6 +75,9 @@ body {
   .fluid_container {
     width: 95%;
   }
+  .header_custom_width {
+    width: 95%;
+  }
 }
 @media (min-width: 1200px) {
   .container {
@@ -87,6 +91,14 @@ body {
   }
   .submenu:not(.submenu-vertical)  .stretch_width {
     --bs-gutter-x: 4rem;
+  }
+  /* Custom header width class for 1800px */
+  .header_custom_width {
+    max-width: calc(1800px + var(--bs-gutter-x) * 2);
+    padding-left: var(--bs-gutter-x, 1.5rem);
+    padding-right: var(--bs-gutter-x, 1.5rem);
+    margin-inline: auto;
+    width: 100%;
   }
 }
 :where(h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .h0, .heading) {
@@ -2495,6 +2507,8 @@ header.active li.visible .submenu:not(.submenu-vertical) {
 }
 
 .swiper:not([class*='initialized'])[data-mobile='1.5'] .swiper-slide {
+  width: calc((100% - (var(--gap, 3rem) * 1)) / 2);
+}
   width: calc((100% - (var(--gap, 3rem) * 1)) / 1.5);
 }
 .swiper:not([class*='initialized'])[data-mobile='1'] .swiper-slide {

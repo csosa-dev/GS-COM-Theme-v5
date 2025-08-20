@@ -16,7 +16,7 @@
     "desktop_logo_width": 220,
     "mobile_logo_width": 120,
     "page_width": 1200,
-    "fluid_container_width": 1440,
+    "fluid_container_width": 1410,
     "enable_rounded": true,
     "rounded_corner": 10,
     "spacing_desktop": 90,
