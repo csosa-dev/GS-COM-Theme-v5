@@ -77,6 +77,7 @@ body {
   }
   .header_custom_width {
     width: 95%;
+    max-width: 1848px; /* 1800px + 48px padding (24px each side) */
   }
 }
 @media (min-width: 1200px) {
@@ -94,7 +95,7 @@ body {
   }
   /* Custom header width class for 1800px */
   .header_custom_width {
-    max-width: calc(1800px + var(--bs-gutter-x) * 2);
+    max-width: 1848px; /* 1800px + 48px padding (24px each side) */
     padding-left: var(--bs-gutter-x, 1.5rem);
     padding-right: var(--bs-gutter-x, 1.5rem);
     margin-inline: auto;
