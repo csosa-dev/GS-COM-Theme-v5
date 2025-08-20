@@ -38,7 +38,7 @@
       ],
       "name": "t:sections.header.header_mega_store",
       "settings": {
-        "section_width": "fluid_container",
+        "section_width": "header_custom_width",
         "color_scheme": "default",
         "show_email": false,
         "show_phone": false,
